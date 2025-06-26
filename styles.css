@@ -1,0 +1,113 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+body {
+	background-image: url('pagebackground.jpg');
+	background-size: cover;
+	background-repeat: repeat-y;
+	background-position: center;
+}
+h1 {
+	color: rgb(200, 80, 40);
+	text-align: center;
+	font-size: 40px;
+	font-family: 'papyrus', fantasy;
+	text-shadow: 
+		-1px -1px 0 white,
+		-1px -1px 0 white,
+		-1px -1px 0 white,
+		1px 1px 0 white;
+}
+.top-buttons {
+	font-family: 'papyrus', fantasy;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+#add-button {
+	font-family: 'papyrus', fantasy;
+	margin-left: 30px;
+	margin-bottom: 10px;
+}
+#remove-button {
+	font-family: 'papyrus', fantasy;
+	margin-left: 30px;
+	margin-bottom: 10px;
+}
+#clear-button {
+	font-family: 'papyrus', fantasy;
+	margin-left: 30px;
+	margin-bottom: 10px;
+}
+#clear-button-popup {
+	display: none;
+	align-content: center;
+}
+.popup-box {
+	display: none;
+	position: fixed;
+	top: 0; 
+	left: 0;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	align-items: center;
+	justify-content: center;
+	z-index: 999;
+}
+.popup-content {
+	background: white;
+	padding: 20px;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(4,4fr); /* 4 columns, adjust as needed*/
+	gap: 16px;
+	max-width:600px;
+	margin: 0 auto;
+	margin-left: 10px,;
+	margin-right: 10px,;
+	margin-bottom: 10px,;
+}
+
+.icon-square {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	background-color: black;
+	border: 2px solid #ccc;
+	padding: 40px;
+	text-align: center;
+	font-size: 1.5rem;
+	cursor: pointer;
+	transition: border 0.2s, background 0.2s;
+}
+
+.grid-item.selected {
+	border: 2px solid #007bff;
+	background: #cce5ff;
+}
+.icon-square button {
+	font-family: 'papyrus', fantasy;
+
+}
+.bottom-buttons {
+	font-family: 'papyrus', fantasy;
+	display: flex;
+	top: 50%;
+	left: 50%;
+	margin-top: 10px;
+}
+#scroll-to-top {
+	font-family: 'papyrus', fantasy;
+	margin-bottom: 10px;
+}
